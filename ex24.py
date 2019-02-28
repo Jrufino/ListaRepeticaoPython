@@ -11,5 +11,6 @@ while sair !='S':
     somaNotas=0
     for i in range(len(notas)):
         somaNotas=somaNotas+notas[i]
-    media=(somaNotas/len(notas))
-    print('Media {0:.2f}'.format(media))
+    sair=str.upper(input('S-Sair, outra tecla continua'))
+media=(somaNotas/len(notas))
+print('Media {0:.2f}'.format(media))
