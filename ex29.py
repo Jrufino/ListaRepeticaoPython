@@ -14,16 +14,16 @@ i=0
 j=0
 itens=[]
 
-numeroItens=int(input('Digite o numero de itens: '))
-
-while numeroItens<=0:
+numeroValido=False
+while numeroValido!= True:
+    numeroItens=int(input('Digite o numero de itens: '))
     if numeroItens>50:
         print('Quantidade deve ser abaixo de 50')
-        continue
+    else:
+        numeroValido=True
     
-
 for i in range (0,numeroItens):
-    valorItem=float(input('Digite o valor do item: '))
+    valorItem=float(input('Digite o valor do item {}: '.format(i+1)))
     itens.append(valorItem)
 print('Loja Quase Dois - Tabela de precos')
 for j in range (0, numeroItens):
